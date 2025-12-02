@@ -203,7 +203,7 @@ const Canvas = () => {
   }, []);
 
   useEffect(() => {
-    socketRef.current = io('http://localhost:5000');
+    socketRef.current = io('https://syncpad-backend.onrender.com');
 
     if (roomId && userId) {
       socketRef.current.emit('join-room', {

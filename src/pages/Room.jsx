@@ -5,7 +5,7 @@ import axios from 'axios';
 import { LogIn, Plus } from 'lucide-react';
 import '../styles/RoomCSS.css';
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://syncpad-backend.onrender.com';
 
 const Room = () => {
   const [username, setUsername] = useState('');
