@@ -34,7 +34,7 @@ const Room = () => {
   };
 
   useEffect(() => {
-    const newSocket = io(API_BASE_URL, {
+    const newSocket = io("https://syncpad-backend.onrender.com", {
       transports: ['websocket'],
       timeout: 10000,
       forceNew: true
